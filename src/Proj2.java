@@ -1,4 +1,5 @@
 import java.io.FileInputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -175,7 +176,7 @@ public class Proj2 {
         AvlTree<Movies> avlShuffled = new AvlTree<>();
         startShuffled = System.nanoTime();
         for (Movies m : data) {
-            bstShuffled.insert(m);
+            avlShuffled.insert(m);
         }
 
         endShuffled = System.nanoTime();
@@ -206,6 +207,24 @@ public class Proj2 {
             return true;
         } catch (NumberFormatException e) {
             return false;
+        }
+    }
+
+    // Implement the writeToFile method
+    // Generate the result file
+    public void writeToFile(String content, String filePath) {
+        try (FileWriter fw = new FileWriter(filePath, true)) {
+            fw.write(content + System.lineSeparator());
+        } catch (IOException e) {
+            System.exit(1);
+        }
+    }
+
+    private void clearFile() {
+        try (FileWriter fw = new FileWriter("./result.txt", false)) {
+            fw.write("");
+        } catch (IOException e) {
+            System.exit(1);
         }
     }
 }

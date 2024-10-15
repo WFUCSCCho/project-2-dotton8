@@ -144,8 +144,7 @@ public class AvlTree<AnyType extends Comparable<? super AnyType>> {
             } else {
                 t = doubleWithLeftChild(t);
             }
-        }
-        if (height(t.right) - height(t.left) > ALLOWED_IMBALANCE) {
+        } else if (height(t.right) - height(t.left) > ALLOWED_IMBALANCE) {
             if (height(t.right.right) >= height(t.right.left)) {
                 t = rotateWithRightChild(t);
             } else {
@@ -279,6 +278,9 @@ public class AvlTree<AnyType extends Comparable<? super AnyType>> {
      */
     private AvlNode<AnyType> rotateWithLeftChild( AvlNode<AnyType> k2 ) {
 	// FINISH ME
+        if (k2 == null || k2.right == null) {
+            return k2;
+        }
         AvlNode<AnyType> k1 = k2.left;
         k2.left = k1.right;
         k1.right = k2;
@@ -294,6 +296,9 @@ public class AvlTree<AnyType extends Comparable<? super AnyType>> {
      */
     private AvlNode<AnyType> rotateWithRightChild( AvlNode<AnyType> k1 ) {
 	// FINISH ME
+        if (k1 == null || k1.right == null) {
+            return k1;
+        }
         AvlNode<AnyType> k2 = k1.right;
         k1.right = k2.left;
         k2.left = k1;
@@ -310,6 +315,9 @@ public class AvlTree<AnyType extends Comparable<? super AnyType>> {
      */
     private AvlNode<AnyType> doubleWithLeftChild( AvlNode<AnyType> k3 ) {
 	// FINISH ME
+        if (k3 == null || k3.left == null) {
+            return k3;
+        }
         k3.left = rotateWithLeftChild( k3.left );
         return rotateWithLeftChild( k3 );
     }
@@ -322,6 +330,9 @@ public class AvlTree<AnyType extends Comparable<? super AnyType>> {
      */
     private AvlNode<AnyType> doubleWithRightChild( AvlNode<AnyType> k1 ) {
 	// FINISH ME
+        if (k1 == null || k1.right == null) {
+            return k1;
+        }
         k1.right = rotateWithRightChild( k1.right );
         return rotateWithRightChild( k1 );
     }
