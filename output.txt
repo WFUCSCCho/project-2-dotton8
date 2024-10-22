@@ -1,0 +1,140 @@
+Runtime for 2 nodes (i.e., movies):
+
+BST Runtimes:
+Sorted BST Insertion Runtime: 1.49417E-4 seconds
+Sorted BST Search Runtime: 4.75E-6 seconds
+Shuffled BST Insertion Runtime: 2.209E-6 seconds
+Shuffled BST Search Runtime: 4.417E-6 seconds
+
+AVL Runtimes:
+Sorted AVL Insertion Runtime: 9.1209E-5 seconds
+Sorted AVL Search Runtime: 5.5E-6 seconds
+Shuffled AVL Insertion Runtime: 2.417E-6 seconds
+Shuffled AVL Search Runtime: 3.292E-6 seconds
+
+Runtime for 4 nodes (i.e., movies):
+
+BST Runtimes:
+Sorted BST Insertion Runtime: 1.1375E-4 seconds
+Sorted BST Search Runtime: 7.375E-6 seconds
+Shuffled BST Insertion Runtime: 5.208E-6 seconds
+Shuffled BST Search Runtime: 6.625E-6 seconds
+
+AVL Runtimes:
+Sorted AVL Insertion Runtime: 1.00667E-4 seconds
+Sorted AVL Search Runtime: 8.334E-6 seconds
+Shuffled AVL Insertion Runtime: 4.375E-6 seconds
+Shuffled AVL Search Runtime: 5.708E-6 seconds
+
+Runtime for 8 nodes (i.e., movies):
+
+BST Runtimes:
+Sorted BST Insertion Runtime: 1.39584E-4 seconds
+Sorted BST Search Runtime: 1.5417E-5 seconds
+Shuffled BST Insertion Runtime: 7.916E-6 seconds
+Shuffled BST Search Runtime: 1.7834E-5 seconds
+
+AVL Runtimes:
+Sorted AVL Insertion Runtime: 9.9958E-5 seconds
+Sorted AVL Search Runtime: 1.3875E-5 seconds
+Shuffled AVL Insertion Runtime: 1.2708E-5 seconds
+Shuffled AVL Search Runtime: 1.1125E-5 seconds
+
+Runtime for 16 nodes (i.e., movies):
+
+BST Runtimes:
+Sorted BST Insertion Runtime: 1.6075E-4 seconds
+Sorted BST Search Runtime: 7.0292E-5 seconds
+Shuffled BST Insertion Runtime: 1.5625E-5 seconds
+Shuffled BST Search Runtime: 2.0708E-5 seconds
+
+AVL Runtimes:
+Sorted AVL Insertion Runtime: 1.16833E-4 seconds
+Sorted AVL Search Runtime: 2.3292E-5 seconds
+Shuffled AVL Insertion Runtime: 1.8167E-5 seconds
+Shuffled AVL Search Runtime: 2.1083E-5 seconds
+
+Runtime for 32 nodes (i.e., movies):
+
+BST Runtimes:
+Sorted BST Insertion Runtime: 2.60667E-4 seconds
+Sorted BST Search Runtime: 1.9825E-4 seconds
+Shuffled BST Insertion Runtime: 1.7E-5 seconds
+Shuffled BST Search Runtime: 9.375E-6 seconds
+
+AVL Runtimes:
+Sorted AVL Insertion Runtime: 1.50958E-4 seconds
+Sorted AVL Search Runtime: 5.1625E-5 seconds
+Shuffled AVL Insertion Runtime: 4.425E-5 seconds
+Shuffled AVL Search Runtime: 5.75E-5 seconds
+
+Runtime for 64 nodes (i.e., movies):
+
+BST Runtimes:
+Sorted BST Insertion Runtime: 4.15667E-4 seconds
+Sorted BST Search Runtime: 2.12042E-4 seconds
+Shuffled BST Insertion Runtime: 2.0875E-5 seconds
+Shuffled BST Search Runtime: 6.1875E-5 seconds
+
+AVL Runtimes:
+Sorted AVL Insertion Runtime: 1.92333E-4 seconds
+Sorted AVL Search Runtime: 1.2775E-4 seconds
+Shuffled AVL Insertion Runtime: 5.2959E-5 seconds
+Shuffled AVL Search Runtime: 2.0792E-5 seconds
+
+Runtime for 128 nodes (i.e., movies):
+
+BST Runtimes:
+Sorted BST Insertion Runtime: 5.11084E-4 seconds
+Sorted BST Search Runtime: 4.01458E-4 seconds
+Shuffled BST Insertion Runtime: 1.45459E-4 seconds
+Shuffled BST Search Runtime: 4.5E-5 seconds
+
+AVL Runtimes:
+Sorted AVL Insertion Runtime: 3.36459E-4 seconds
+Sorted AVL Search Runtime: 2.34208E-4 seconds
+Shuffled AVL Insertion Runtime: 6.6459E-5 seconds
+Shuffled AVL Search Runtime: 3.2E-5 seconds
+
+Runtime for 256 nodes (i.e., movies):
+
+BST Runtimes:
+Sorted BST Insertion Runtime: 0.002417583 seconds
+Sorted BST Search Runtime: 5.76375E-4 seconds
+Shuffled BST Insertion Runtime: 2.01E-4 seconds
+Shuffled BST Search Runtime: 5.3792E-5 seconds
+
+AVL Runtimes:
+Sorted AVL Insertion Runtime: 4.94375E-4 seconds
+Sorted AVL Search Runtime: 3.17E-4 seconds
+Shuffled AVL Insertion Runtime: 1.28417E-4 seconds
+Shuffled AVL Search Runtime: 5.3167E-5 seconds
+
+Runtime for 512 nodes (i.e., movies):
+
+BST Runtimes:
+Sorted BST Insertion Runtime: 0.002441875 seconds
+Sorted BST Search Runtime: 0.00164875 seconds
+Shuffled BST Insertion Runtime: 2.85208E-4 seconds
+Shuffled BST Search Runtime: 1.00792E-4 seconds
+
+AVL Runtimes:
+Sorted AVL Insertion Runtime: 6.56333E-4 seconds
+Sorted AVL Search Runtime: 2.725E-4 seconds
+Shuffled AVL Insertion Runtime: 1.78792E-4 seconds
+Shuffled AVL Search Runtime: 9.6417E-5 seconds
+
+Runtime for 1000 nodes (i.e., movies):
+
+BST Runtimes:
+Sorted BST Insertion Runtime: 0.004745834 seconds
+Sorted BST Search Runtime: 0.003709208 seconds
+Shuffled BST Insertion Runtime: 3.65833E-4 seconds
+Shuffled BST Search Runtime: 1.85834E-4 seconds
+
+AVL Runtimes:
+Sorted AVL Insertion Runtime: 8.11084E-4 seconds
+Sorted AVL Search Runtime: 4.31125E-4 seconds
+Shuffled AVL Insertion Runtime: 6.14E-4 seconds
+Shuffled AVL Search Runtime: 1.72625E-4 seconds
+

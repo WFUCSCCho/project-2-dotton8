@@ -90,6 +90,12 @@ public class Proj2 {
         long startSorted, endSorted, runTimeSorted, startShuffled, endShuffled, runTimeShuffled;
         double runTimeSecondsSorted, runTimeSecondsShuffled;
 
+        String content;
+        //clearFile();
+
+        content = "Runtime for " + numLines + " nodes (i.e., movies):\n";
+        writeToFile(content);
+
         // BST Sorted Insertion
         BST<Movies> bstSorted = new BST<>();
         startSorted = System.nanoTime();
@@ -101,7 +107,9 @@ public class Proj2 {
         runTimeSorted = endSorted - startSorted;
         runTimeSecondsSorted = runTimeSorted / 1_000_000_000.0;
 
-        System.out.println("Sorted BST Insertion Runtime: " + runTimeSecondsSorted + " seconds");
+        content = "BST Runtimes:\nSorted BST Insertion Runtime: " + runTimeSecondsSorted + " seconds";
+        System.out.println(content);
+        writeToFile(content);
 
         // BST Sorted Search
         startSorted = System.nanoTime();
@@ -113,7 +121,9 @@ public class Proj2 {
         runTimeSorted = endSorted - startSorted;
         runTimeSecondsSorted = runTimeSorted / 1_000_000_000.0;
 
-        System.out.println("Sorted BST Search Runtime: " +runTimeSecondsSorted + " seconds");
+        content = "Sorted BST Search Runtime: " +runTimeSecondsSorted + " seconds";
+        System.out.println(content);
+        writeToFile(content);
 
         // Shuffled BST Insertion
         Collections.shuffle(data);
@@ -128,7 +138,9 @@ public class Proj2 {
         runTimeShuffled = endShuffled - startShuffled;
         runTimeSecondsShuffled = runTimeShuffled / 1_000_000_000.0;
 
-        System.out.println("Shuffled BST Insertion Runtime: " + runTimeSecondsShuffled + " seconds");
+        content = "Shuffled BST Insertion Runtime: " + runTimeSecondsShuffled + " seconds";
+        System.out.println(content);
+        writeToFile(content);
 
         // Shuffled BST Search
         startShuffled = System.nanoTime();
@@ -140,9 +152,10 @@ public class Proj2 {
         runTimeShuffled = endShuffled - startShuffled;
         runTimeSecondsShuffled = runTimeShuffled / 1_000_000_000.0;
 
-        System.out.println("Shuffled BST Search Runtime: " + runTimeSecondsShuffled + " seconds");
+        content = "Shuffled BST Search Runtime: " + runTimeSecondsShuffled + " seconds";
+        System.out.println(content);
+        writeToFile(content);
 
-        System.out.println();
         Collections.sort(data);
 
         // AVL Sorted Insertion
@@ -156,7 +169,9 @@ public class Proj2 {
         runTimeSorted = endSorted - startSorted;
         runTimeSecondsSorted = runTimeSorted / 1_000_000_000.0;
 
-        System.out.println("Sorted AVL Insertion Runtime: " + runTimeSecondsSorted + " seconds");
+        content = "\nAVL Runtimes:\nSorted AVL Insertion Runtime: " + runTimeSecondsSorted + " seconds";
+        System.out.println(content);
+        writeToFile(content);
 
         // AVL Sorted Search
         startSorted = System.nanoTime();
@@ -168,7 +183,9 @@ public class Proj2 {
         runTimeSorted = endSorted - startSorted;
         runTimeSecondsSorted = runTimeSorted / 1_000_000_000.0;
 
-        System.out.println("Sorted AVL Search Runtime: " +runTimeSecondsSorted + " seconds");
+        content = "Sorted AVL Search Runtime: " +runTimeSecondsSorted + " seconds";
+        System.out.println(content);
+        writeToFile(content);
 
         // Shuffled AVL Insertion
         Collections.shuffle(data);
@@ -183,7 +200,10 @@ public class Proj2 {
         runTimeShuffled = endShuffled - startShuffled;
         runTimeSecondsShuffled = runTimeShuffled / 1_000_000_000.0;
 
-        System.out.println("Shuffled AVL Insertion Runtime: " + runTimeSecondsShuffled + " seconds");
+
+        content = "Shuffled AVL Insertion Runtime: " + runTimeSecondsShuffled + " seconds";
+        System.out.println(content);
+        writeToFile(content);
 
         // Shuffled AVL Search
         startShuffled = System.nanoTime();
@@ -195,7 +215,9 @@ public class Proj2 {
         runTimeShuffled = endShuffled - startShuffled;
         runTimeSecondsShuffled = runTimeShuffled / 1_000_000_000.0;
 
-        System.out.println("Shuffled AVL Search Runtime: " + runTimeSecondsShuffled + " seconds");
+        content = "Shuffled AVL Search Runtime: " + runTimeSecondsShuffled + " seconds\n";
+        System.out.println(content);
+        writeToFile(content);
     }
 
     private static boolean isNumeric(String str) {
@@ -212,7 +234,8 @@ public class Proj2 {
 
     // Implement the writeToFile method
     // Generate the result file
-    public void writeToFile(String content, String filePath) {
+    private static void writeToFile(String content) {//, String filePath) {
+        String filePath = "./output.txt";
         try (FileWriter fw = new FileWriter(filePath, true)) {
             fw.write(content + System.lineSeparator());
         } catch (IOException e) {
@@ -220,8 +243,8 @@ public class Proj2 {
         }
     }
 
-    private void clearFile() {
-        try (FileWriter fw = new FileWriter("./result.txt", false)) {
+    private static void clearFile() {
+        try (FileWriter fw = new FileWriter("./output.txt", false)) {
             fw.write("");
         } catch (IOException e) {
             System.exit(1);
