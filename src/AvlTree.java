@@ -15,6 +15,13 @@
 // ******************ERRORS********************************
 // Throws UnderflowException as appropriate
 
+/***
+ * @file: AvlTree.java
+ * @description: This code creates a generic AVL Tree
+ * @author: Douglas Otton
+ * @date: October 22, 2024
+ ***/
+
 /**
  * Implements an AVL tree.
  * Note that all "matching" is based on the compareTo method.

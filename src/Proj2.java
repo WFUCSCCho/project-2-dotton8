@@ -4,6 +4,12 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
+/***
+ * @file: Proj2.java
+ * @description: This code takes various number of Movies and compares the runtimes and run rates for AVLs and BSTs
+ * @author: Douglas Otton
+ * @date: October 23, 2024
+ ***/
 
 public class Proj2 {
     public static void main(String[] args) throws IOException {
